@@ -479,6 +479,6 @@ footer iframe{
 }
     .departments button{
         max-height:110px;
-        max-width:40%;
+        max-width:100%;
     }
 }
