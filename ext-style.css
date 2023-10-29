@@ -248,7 +248,7 @@ button {
   .all{
     position: relative;
     max-height: 40%;
-    border: 2px solid transparent;
+    border: 2px solid rgb(7, 84, 114);
     border-radius: 10px;
     margin:auto;
     margin-bottom:1%;
