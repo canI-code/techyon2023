@@ -203,7 +203,7 @@ button {
   
   .typewriter-effect>.text {
     max-width: 0;
-    animation: typing 5s steps(var(--characters)) infinite;
+    animation: typing 5s steps(var(--characters)) 1;
     white-space: nowrap;
     word-wrap: normal;
     overflow: hidden;
@@ -212,7 +212,7 @@ button {
   .typewriter-effect::after {
     color: #4483d6;
     content: " |";
-    animation: blink 1s infinite;
+    animation: blink 1s 1;
     animation-timing-function: step-end;
   }
   
@@ -368,7 +368,7 @@ button {
   /* Adjust font sizes, margins, or padding for smaller screens */
   .typewriter-effect>.text {
     max-width: 0;
-    animation: typing 5s steps(var(--characters)) infinite;
+    animation: typing 5s steps(var(--characters)) 1;
     white-space: nowrap;
     word-wrap: normal;
     overflow: hidden;
@@ -377,7 +377,7 @@ button {
   .typewriter-effect::after {
     color: #4483d6;
     content: " |";
-    animation: blink 1s infinite;
+    animation: blink 1s 1;
     animation-timing-function: step-end;
     font-size: 2rem;
   }
@@ -428,6 +428,8 @@ footer iframe{
 
 .all-dept{
   width:100%;
+}
+}
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
