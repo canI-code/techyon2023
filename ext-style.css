@@ -220,9 +220,12 @@ button {
   @keyframes typing {
   
     75%,
-    100% {
+    99% {
       max-width: calc(var(--characters) * 1ch);
     }
+      100%{
+          max-width:240px;
+      }
   }
   
   @keyframes blink {
