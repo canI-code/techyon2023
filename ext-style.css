@@ -213,6 +213,7 @@ button {
     color: #4483d6;
     content: " |";
     animation: blink 1s 1;
+      animation-direction:reversed;
     animation-timing-function: step-end;
   }
   
@@ -378,6 +379,7 @@ button {
     color: #4483d6;
     content: " |";
     animation: blink 1s 1;
+      aniamtion-direction:reversed;
     animation-timing-function: step-end;
     font-size: 2rem;
   }
