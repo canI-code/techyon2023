@@ -181,6 +181,57 @@ button {
     text-shadow: 0 0 3px #00aeff;
 }
 
+.typewriter-div {
+  min-width: 200px;
+}
+
+.typewriter-effect {
+  margin: auto;
+  /* margin-top:10%; */
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  word-wrap: normal;
+  color: #4483d6;
+  text-shadow: 5px 3px 6px #434242a8;
+}
+
+.typewriter-effect>.text {
+  max-width: 0;
+  animation: typing 5s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.typewriter-effect::after {
+  color: #4483d6;
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes typing {
+
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+}
 
 
 
