@@ -9,7 +9,8 @@
   <title></title>
   <meta name="description" content="pcce techyon2023 event website ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+ <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://techyon.b-cdn.net/style.css">
   <link rel="stylesheet" href="ext-style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -48,12 +49,11 @@
 
               <a href="./index.html" class="logo"><img class="logo" src="images/PCCE_Logo.png" alt="pcce_logo"></a>
               <!-- <a class='  chakra   font-bold  outline-none  text-6xl  md:text-5xl ' href='/'>Techyon</a> -->
-
-              <div class="space-y-3 px-8 text-center typewriter-div">
-                <div class="typewriter-effect text-1xl md:text-4xl font-bold">
-                  <div class="text" id="typewriter-text"></div>
+              <div class="wrapper">
+                <div class="typing-demo">
+                  TECHYON 2023
                 </div>
-              </div>
+            </div>
             </div>
             <div class="p-4 flex flex-row  justify-end menu-box">
               <div class="flex self-start lg:mx-6 pr-8 flex justify-center">
@@ -66,7 +66,7 @@
 
               <div class="p-4 flex flex-row  justify-end ">
 
-                <button class=" md:hidden rounded-lg focus:outline-none focus:shadow-outline " @click="open = !open"
+                <button aria-label="menu" class=" md:hidden rounded-lg focus:outline-none focus:shadow-outline " @click="open = !open"
                   id="toggle">
                   <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-white dark:text-black">
                     <path x-show="!open" fill-rule="evenodd"
@@ -80,16 +80,6 @@
               </div>
               <nav :class="{'flex': open, 'hidden': !open}"
                 class="flex-col flex-grow pb-4 md:pb-2 lg:pb-0 hidden md:flex  md:justify-center lg:justify-end md:flex-row dark:bg-white dark:text-black ">
-                <!-- <a class=" smooth  py-2 px-4 m-1 hover:bg-white rounded-lg hover:text-black text-white dark:hover:bg-blue-400 dark:text-black dark:hover:text-white transition duration-300"
-                  href="./index.html#Events">Events</a>
-                <a class="smooth   py-2 px-4 m-1 hover:bg-white rounded-lg hover:text-black text-white dark:hover:bg-blue-400 dark:text-black dark:hover:text-white transition duration-300"
-                  href="./index.html#Sponsors">Associates</a>
-
-                <a class="smooth py-2 px-4 m-1 hover:bg-white rounded-lg hover:text-black text-white dark:hover:bg-blue-400 dark:text-black dark:hover:text-white transition duration-300"
-                  href="./index.html#Contactus">Contact</a>
-
-                <a class="smooth py-2 px-4 m-1 hover:bg-white rounded-lg hover:text-black text-white dark:hover:bg-blue-400 dark:text-black dark:hover:text-white transition duration-300"
-                  href="./index.html#Team">Team</a> -->
                 <a class='smooth bg-blue-600 py-2 px-4 m-1  rounded-lg  hover:bg-black text-white transition duration-300'
                   href='./index.html'>Home</a>
               </nav>
@@ -101,7 +91,7 @@
     <!--  header images /title -->
 
     <!-- back to top  -->
-    <button onclick="topFunction()" id="myBtn"
+    <button aria-label="move top" onclick="topFunction()" id="myBtn"
       class="  p-2.5   md:m-2   text-white   bg-blue-400 opacity-75 hover:bg-blue-900 hover:opacity-100 transition-all duration-500 ease-in-out rounded-full  z-50" style="position:fixed; bottom:2%;right:2%; width:fit-content;">
       <span><i class="fa fa-chevron-up "></i></span>
     </button>
@@ -131,7 +121,7 @@
                     <div class="flex flex-wrap ">
     
     
-                      <a target='_blank' href='https://wa.me/917507986584'
+                      <a rel="noopener" target='_blank' href='https://wa.me/917507986584'
                         class="bg-green-400 px-4 py-2 flex-1 m-1 rounded-lg  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105  hover:bg-black hover:text-white  text-center">
                         <span class="    text-white">
                           <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </span> </a>
@@ -157,7 +147,7 @@
                     <div class="flex flex-wrap ">
     
     
-                      <a target='_blank' href='https://wa.me/917558498271'
+                      <a rel="noopener" target='_blank' href='https://wa.me/917558498271'
                         class="bg-green-400 px-4 py-2 flex-1 m-1 rounded-lg  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105  hover:bg-black hover:text-white  text-center">
                         <span class="    text-white">
                           <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </span> </a>
@@ -181,7 +171,7 @@
                 <div class="flex flex-wrap ">
 
 
-                <a target='_blank' href='https://wa.me/919834075982'
+                <a rel="noopener" target='_blank' href='https://wa.me/919834075982'
                   class="bg-green-400 px-4 py-2 flex-1 m-1 rounded-lg  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105  hover:bg-black hover:text-white  text-center">
                   <span class="    text-white">
                     <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </span> </a>
