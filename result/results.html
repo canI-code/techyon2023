@@ -7,7 +7,8 @@
   <title>RESULTS</title>
   <meta name="description" content="pcce techyon2023 event website ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../style.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://techyon.b-cdn.net/style.css">
   <link rel="stylesheet" href="../ext-style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">  
@@ -151,9 +152,9 @@
               <img class="logo" src="../images/PCCE_Logo.png" alt="pcce_logo">
               <!-- <a class='  chakra   font-bold  outline-none  text-6xl  md:text-5xl ' href='/'>Techyon</a> -->
 
-              <div class="space-y-3 px-8 text-center typewriter-div">
-                <div class="typewriter-effect text-1xl md:text-4xl font-bold">
-                  <div class="text" id="typewriter-text"></div>
+              <div class="wrapper">
+                <div class="typing-demo">
+                  TECHYON 2023
                 </div>
               </div>
             </div>
@@ -168,7 +169,7 @@
 
               <div class="p-4 flex flex-row  justify-end ">
 
-                <button class=" md:hidden rounded-lg focus:outline-none focus:shadow-outline " @click="open = !open"
+                <button aria-label="menu" class=" md:hidden rounded-lg focus:outline-none focus:shadow-outline " @click="open = !open"
                   id="toggle">
                   <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-white dark:text-black">
                     <path x-show="!open" fill-rule="evenodd"
@@ -204,7 +205,7 @@
     </header>
     <!--code for column below-->
     <div id="coming">
-		<H1>🏆 COMING SOON !!!</H1>
+		<H1 class="dark:text-black text-white">🏆 COMING SOON !!!</H1>
 
 		</div>
 
@@ -253,7 +254,7 @@
             </li>
           </ul>
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022-2023 <a
-              href="https://pccegoa.edu.in/" target="_blank" class="hover:underline">PCCE</a>. All Rights
+              href="https://pccegoa.edu.in/" target="_blank" rel="noopener" class="hover:underline">PCCE</a>. All Rights
             Reserved.</span>
         </div>
       </footer>
@@ -263,10 +264,6 @@
 const text = 'TECHYON 2023';
 typeWriter.innerHTML = text;
 typeWriter.style.setProperty('--characters', text.length);
-      </script>
-
-      
-
       </script>
     </body>
 </html>
