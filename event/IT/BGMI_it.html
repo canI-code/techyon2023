@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://techyon.b-cdn.net/style.css">
     <link rel="stylesheet" href="../../ext-style.css">
     <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -39,9 +41,9 @@
                             <img class="logo" src="../../images/PCCE_Logo.png" alt="pcce_logo">
                             <!-- <a class='  chakra   font-bold  outline-none  text-6xl  md:text-5xl ' href='/'>Techyon</a> -->
 
-                            <div class="space-y-3 px-8 text-center typewriter-div">
-                                <div class="typewriter-effect text-1xl md:text-4xl font-bold">
-                                    <div class="text" id="typewriter-text"></div>
+                            <div class="wrapper">
+                                <div class="typing-demo">
+                                    TECHYON 2023
                                 </div>
                             </div>
                         </div>
@@ -56,7 +58,8 @@
 
                             <div class="p-4 flex flex-row  justify-end ">
 
-                                <button class=" md:hidden rounded-lg focus:outline-none focus:shadow-outline "
+                                <button aria-label="menu"
+                                    class=" md:hidden rounded-lg focus:outline-none focus:shadow-outline "
                                     @click="open = !open" id="toggle">
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         class="w-6 h-6 text-white dark:text-black">
@@ -90,7 +93,7 @@
         </header>
 
         <!-- back to top  -->
-        <button onclick="topFunction()" id="myBtn"
+        <button aria-label="move top" onclick="topFunction()" id="myBtn"
             class="  p-2.5   md:m-2 lg:m-2  text-white   bg-blue-800 opacity-75 hover:bg-blue-900 hover:opacity-100 transition-all duration-500 ease-in-out rounded-full  z-50">
             <span><i class="fa fa-chevron-up "></i></span>
         </button>
@@ -114,9 +117,11 @@
                 <div class="w-full md:w-3/5   ">
                     <div class="mb-6  mt-6 md:mt-0 dark:text-gray-600  text-gray-300">
                         <h1 id="event-name" class=" uppercase mb-8 text-4xl font-bold "></h1>
-                        <h1 class=" uppercase mb-3 text-lg font-bold ">Category: Battle Ground Mobile India <span id="category">
+                        <h1 class=" uppercase mb-3 text-lg font-bold ">Category: Battle Ground Mobile India <span
+                                id="category">
                             </span> </h1>
-                        <h1 class=" uppercase mb-3 text-lg font-bold ">Type: Inter College <span id="event-type"> </span> </h1>
+                        <h1 class=" uppercase mb-3 text-lg font-bold ">Type: Inter College <span id="event-type">
+                            </span> </h1>
 
                         <h1 class=" uppercase mb-3 text-lg font-bold ">Date: 09 - 11 - 2023<span id="date"> </span>
                         </h1>
@@ -127,27 +132,32 @@
 
                         <!-- button -->
                         <div class=" flex xl:w-1/2 w- my-6 mx-2">
-                            <a id="register-button" target='_blank'
+                            <a id="register-button" rel="noopener" target='_blank'
                                 href='https://docs.google.com/forms/d/1Bv5GfhS1dGOOJh3sJAnFUi0bcsOhSHYZW1RileVf0ss/edit'
                                 class="bg-blue-400 px-4 py-2 flex-1 m-1 rounded-lg  transition duration-500 ease-in-out  hover:bg-black text-white  text-center">
                                 <span class="  text-white">
                                     <i class="fas fa-arrow-right" aria-hidden="true"></i> </span>Register </a>
-                            <a id="rulebook-button" target='_blank' href='./rulebook/BGMI.pdf'
+                            <a id="rulebook-button" rel="noopener" target='_blank' href='./rulebook/BGMI.pdf'
                                 class="bg-red-400 px-4 py-2 flex-1 m-1 rounded-lg  transition duration-500 ease-in-out  hover:bg-black text-white  text-center"
                                 download>
                                 <span class="  text-white">
                                     <i class="fas fa-download" aria-hidden="true"></i> </span>Rule Book</a>
                         </div>
-                        <em>ENTRY FEES :  &#8377; 200</em><br><br>
+                        <em>ENTRY FEES : &#8377; 200</em><br><br>
                         <h1 class=" uppercase mb-2 text-xl font-bold ">Instructions :</h1><br>
                         <p id="instructions" class="text-lg ">
                             <strong>(1)</strong> Squad Size: 4 players<br>
-                            <strong>(2)</strong> Top 25 team entries will be taken after that entries will be closed.<br>
-                            <strong>(3)</strong> Participants Must Get their Own Internet,That is,they Must have Sufficient Data Pack To Play For The Duration of the Competition<br><br>
-                            <strong>GAME FORMAT: </strong><br>(i) 2 rounds will be held where the first qualifier round will be played on enrangle and the final round will be played on sanhok.<br>
+                            <strong>(2)</strong> Top 25 team entries will be taken after that entries will be
+                            closed.<br>
+                            <strong>(3)</strong> Participants Must Get their Own Internet,That is,they Must have
+                            Sufficient Data Pack To Play For The Duration of the Competition<br><br>
+                            <strong>GAME FORMAT: </strong><br>(i) 2 rounds will be held where the first qualifier round
+                            will be played on enrangle and the final round will be played on sanhok.<br>
                             <strong>(ii)</strong> Qualifier round(erangle) will consist of all 25 teams <br>
-                            <strong>(iii)</strong> Top 13 teams who survive the enragle map will move to the final round the sanhok map<br>
-                            <strong>(iv)</strong> The 1st and the 2nd place will be decided after the final round gets over(sanhok). <br><br>
+                            <strong>(iii)</strong> Top 13 teams who survive the enragle map will move to the final round
+                            the sanhok map<br>
+                            <strong>(iv)</strong> The 1st and the 2nd place will be decided after the final round gets
+                            over(sanhok). <br><br>
                             <strong>(4)</strong> Teams should consist of students from the same college.<br><br>
                             <strong>Game Mode:</strong> Standard Battle Royale <br>
                             <em>Maps:</em> Erangle(Qualifier round) and Sanhok(Final round). <br><br>
@@ -156,18 +166,23 @@
                             <strong>(2)</strong> The red zone will be enabled.<br>
                             <strong>(3)</strong> Weather conditions (sunny, rainy, foggy) will be random<br><br>
                             <strong>Fair Play:</strong><br>
-                            <strong>(1)</strong> Cheating, hacking, or exploiting game mechanics is strictly prohibited.<br>
+                            <strong>(1)</strong> Cheating, hacking, or exploiting game mechanics is strictly
+                            prohibited.<br>
                             <strong>(2)</strong> Fair play and sportsmanship are expected from all participants.<br>
                             <strong>(3)</strong> Violators may be disqualified.<br><br>
                             <strong>Banned Items:</strong><br>
                             <strong>(1)</strong> All forms of cheating software or scripts are strictly prohibited.<br>
                             <strong>(2)</strong> Use of glitches or unintended exploits is prohibited.<br>
                             <strong>(3)</strong> Teams must be ready and logged in before the scheduled start time<br>
-                            <strong>(4)</strong> If a player disconnects from the game, the squad can continue the match.<br>
-                            <strong>(5)</strong> The disconnected player can rejoin the game if the match is still in progress.<br>
+                            <strong>(4)</strong> If a player disconnects from the game, the squad can continue the
+                            match.<br>
+                            <strong>(5)</strong> The disconnected player can rejoin the game if the match is still in
+                            progress.<br>
                             <strong>(6)</strong> Teams should inform the organizers about disconnections.<br>
-                            <strong>(7)</strong> Only authorized tournament officials and streamers are allowed to spectate matches.<br>
-                            <strong>(8)</strong> Prizes will be awarded to the top 2 squads based on the final standings and point accumulation.<br>
+                            <strong>(7)</strong> Only authorized tournament officials and streamers are allowed to
+                            spectate matches.<br>
+                            <strong>(8)</strong> Prizes will be awarded to the top 2 squads based on the final standings
+                            and point accumulation.<br>
                         </p>
                     </div>
                     <!-- PRIZE-->
@@ -205,17 +220,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class=" b ">
-                                <div class=" border-gray-200 border-opacity-60 rounded-lg overflow-hidden   ">
-                                    <div
-                                        class="p-4 inline-flex  space-x-2 text-white  dark:text-gray-900 dark:hover:text-gray-400">
-                                        <h1 id=""
-                                            class="dark:text-gray-600 whitespace-nowrap  text-gray-300 uppercase  text-xl font-semi-bold  ">
-                                            🥉 3rd place: 1500 &#8377;<span id="second-place" class="font-bold"></span>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div> -->
                             <!--1 ENDD-->
                         </div>
                     </div>
@@ -236,7 +240,8 @@
                                             Sarthak Patil :- 7447490876
                                         </h1>
                                         <div class="">
-                                            <a id="coordinator-1-phone" target='_blank' href='https://wa.me/917447490876'
+                                            <a id="coordinator-1-phone" rel="noopener" target='_blank'
+                                                href='https://wa.me/917447490876'
                                                 class="bg-green-400 px-4 py-2  rounded-lg  transition duration-500 ease-in-out  hover:bg-black hover:text-white   ">
                                                 <span class=" text-2xl  text-white">
                                                     <i class="fab fa-whatsapp" aria-hidden="true"></i> </span> </a>
@@ -260,7 +265,8 @@
 
                                         <div class="">
 
-                                            <a id="coordinator-2-phone" target='_blank' href='https://wa.me/919823667820'
+                                            <a id="coordinator-2-phone" rel="noopener" target='_blank'
+                                                href='https://wa.me/919823667820'
                                                 class="bg-green-400 px-4 py-2  rounded-lg  transition duration-500 ease-in-out  hover:bg-black hover:text-white   ">
                                                 <span class=" text-2xl  text-white">
                                                     <i class="fab fa-whatsapp" aria-hidden="true"></i> </span> </a>
@@ -309,7 +315,8 @@
                         <a href="../../index.html#Events" class="mr-4 hover:underline md:mr-6 white-text">Events</a>
                     </li>
                     <li>
-                        <a href="../../index.html#Sponsors" class="mr-4 hover:underline md:mr-6 white-text ">Associates</a>
+                        <a href="../../index.html#Sponsors"
+                            class="mr-4 hover:underline md:mr-6 white-text ">Associates</a>
                     </li>
                     <li>
                         <a href="../../index.html#Team" class="mr-4 hover:underline md:mr-6 white-text">Team</a>
@@ -322,19 +329,15 @@
                     </li>
                 </ul>
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-2024 <a
-                        href="https://pccegoa.edu.in/" target="_blank" class="hover:underline">PCCE</a>. All Rights
+                        href="https://pccegoa.edu.in/" target="_blank" rel="noopener" rel="noopener" class="hover:underline">PCCE</a>.
+                    All Rights
                     Reserved.</span>
             </div>
         </footer>
     </div>
 
-    <script>
-        const typeWriter = document.getElementById('typewriter-text');
-        const text = 'TECHYON 2023';
-        typeWriter.innerHTML = text;
-        typeWriter.style.setProperty('--characters', text.length);
-    </script>
     <script src="./loadData.js"></script>
     <script src="../../app.js"></script>
 </body>
+
 </html>
