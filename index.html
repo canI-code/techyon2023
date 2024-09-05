@@ -39,6 +39,177 @@
   .mh-25vh {
     max-height: 25vh;
   }
+
+  .sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
 </style>
 
 <body id="Home" class="overflow-x-hidden bg-black dark:bg-white dark:text-gray-900 text-white ">
@@ -135,8 +306,11 @@
         <div class="w-full lg:w-1/2 self-center dark:text-black  p-2 text-center">
           <div class="inline-flex 
           ">
-            <img loading="lazy" width="450px" class="" data-aos="fade-right" src="images/Logo-Techyon-2023.svg"
-              alt="pcce_logo">
+<!--             <img loading="lazy" width="450px" class="" data-aos="fade-right" src="images/Logo-Techyon-2023.svg"
+              alt="pcce_logo"> -->
+             <div class="sign">
+      <span class="fast-flicker">TECH</span>YON<span class="flicker">20</span>24
+    </div>
 
           </div>
           <!-- <h1 class="text-3xl text-blue-900 font-bold mb-2">TECHYON 2021</h1> -->
@@ -145,8 +319,8 @@
               style="border-radius:10px; color:rgb(0, 128, 255);width:fit-content; margin:auto;margin-bottom:10px;margin-top:5px;">
               PCCE Goa Annual Technical College Fest</p>
             <h1 class=" chakra my-6  text-white font-bold text-2xl bg-gradient-to-r from-purple-200 to-blue-600"
-              style="width:70%;margin:auto; border-radius: 10px;padding:3px;">9<sup>TH</sup>
-              NOV - 11<sup>TH</sup> NOV </h1>
+              style="width:70%;margin:auto; border-radius: 10px;padding:3px;">26<sup>TH</sup>
+              SEP - 28<sup>TH</sup> SEP </h1>
             <div class="inline-flex sm:flex-nowrap flex-wrap justify-center">
               <a href="#Events"
                 class=" self-center text-xl smooth py-2 px-3 m-1 bg-blue-600    rounded-lg  hover:bg-black text-white transition duration-200 border-2 border-transparent hover:border-blue-400">Events</a>
